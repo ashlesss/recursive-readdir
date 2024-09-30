@@ -82,7 +82,11 @@ function readdir(path, ignores, callback) {
             }
           });
         } else {
-          list.push(filePath);
+          // list.push(filePath);
+          list.push({
+            path: filePath,
+            ...stats
+          });
           pending -= 1;
           if (!pending) {
             return callback(null, list);
