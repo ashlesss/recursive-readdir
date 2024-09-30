@@ -1,12 +1,12 @@
 {
   "author": "Jamison Dance <jergason@gmail.com> (http://jamison.dance.com/)",
-  "name": "recursive-readdir",
+  "name": "@ashlesss/recursive-readdir",
   "description": "Get an array of all files in a directory and subdirectories.",
   "license": "MIT",
   "version": "2.2.3",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jergason/recursive-readdir.git"
+    "url": "git@github.com:ashlesss/recursive-readdir.git"
   },
   "main": "./index.js",
   "files": [
@@ -23,6 +23,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
+    "fs-extra": "^11.2.0",
     "minimatch": "^3.0.5"
   },
   "devDependencies": {
